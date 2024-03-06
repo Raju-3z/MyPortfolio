@@ -317,18 +317,6 @@ section {
   flex-direction: column;
 }
 
-.profile-project{
-    margin: 10%;
-    height: fit-content;
-    width: fit-content;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    gap: 4rem;
-    justify-content: space-around;
-
-}
-
 
 .article-container {
   display: flex;
@@ -337,6 +325,17 @@ section {
   flex-direction: row;
   gap: 2.5rem;
   justify-content: space-around;
+}
+.profile-project{
+    margin: 3% auto;
+    height: 60%;
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 4rem;
+    justify-content: space-around;
+
 }
 
 article {
