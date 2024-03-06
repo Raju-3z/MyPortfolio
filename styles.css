@@ -317,6 +317,18 @@ section {
   flex-direction: column;
 }
 
+.profile-project{
+    margin: 10%;
+    height: fit-content;
+    width: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 4rem;
+    justify-content: space-around;
+
+}
+
 
 .article-container {
   display: flex;
