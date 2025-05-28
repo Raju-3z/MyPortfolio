@@ -3,17 +3,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>My Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
-  <script defer src="script.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <title>Rajesh | Portfolio</title>
+  <link rel="stylesheet" href="style.css"/>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
-
-  <!-- Navbar -->
-  <nav id="desktop-nav">
-    <div class="logo">YourName</div>
+  <!-- Navigation -->
+  <nav>
+    <div class="logo">Rajesh</div>
     <ul class="nav-links">
+      <li><a href="#profile">Home</a></li>
       <li><a href="#about">About</a></li>
       <li><a href="#experience">Experience</a></li>
       <li><a href="#projects">Projects</a></li>
@@ -21,120 +20,83 @@
     </ul>
   </nav>
 
-  <!-- Mobile Navbar -->
-  <nav id="hamburger-nav">
-    <div class="logo">YourName</div>
-    <div class="hamburger-menu">
-      <div class="hamburger-icon" onclick="toggleMenu()">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-      <ul class="menu-links">
-        <li><a href="#about" onclick="toggleMenu()">About</a></li>
-        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-      </ul>
-    </div>
-  </nav>
-
   <!-- Profile Section -->
   <section id="profile">
     <div class="section__pic-container">
-      <img src="your-image.jpg" alt="Profile Picture" />
+      <img src="profile.jpg" alt="Rajesh Profile Picture" />
     </div>
     <div class="section__text">
       <p class="section__text_p1">Hello, I'm</p>
-      <h1 class="title">Your Name</h1>
-      <p class="section__text_p2">Web Developer</p>
+      <h1 class="title">Rajesh</h1>
+      <p class="section__text_p2">B.Tech Graduate in Electronics and Computer Engineering</p>
       <div class="btn_container">
         <button class="btn btn-color-1">Resume</button>
-        <button class="btn btn-color-2">Contact</button>
+        <button class="btn btn-color-2">Contact Me</button>
       </div>
       <div id="social-container">
-        <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin linkedin-icon icon"></i></a>
-        <a href="https://github.com" target="_blank"><i class="fab fa-github github-icon icon"></i></a>
-        <i class="fab fa-skype skype-icon icon"></i>
+        <a href="https://www.linkedin.com/in/your-link" target="_blank"><i class="fab fa-linkedin linkedin-icon"></i></a>
+        <a href="https://github.com/your-github" target="_blank"><i class="fab fa-github github-icon"></i></a>
+        <a href="skype:live:your-skype-id"><i class="fab fa-skype skype-icon"></i></a>
       </div>
     </div>
   </section>
 
   <!-- About Section -->
   <section id="about">
-    <p class="section__text_p1">Get to Know More</p>
     <h1 class="title">About Me</h1>
-    <div class="section-container">
-      <div class="section__pic-container">
-        <img src="about-image.jpg" alt="About Image" class="about-pic"/>
-      </div>
+    <div class="section-container about-container">
       <div class="about-details-container">
-        <div class="about-container">
-          <div class="details-container">
-            <h3>Experience</h3>
-            <p>1+ years<br />Frontend Development</p>
-          </div>
-          <div class="details-container">
-            <h3>Education</h3>
-            <p>B.Sc in Computer Science<br />XYZ University</p>
-          </div>
+        <div class="details-container">
+          <p>I'm a recent B.Tech graduate in Electronics and Computer Engineering. I'm passionate about building user-centric web applications and learning new technologies.</p>
         </div>
-        <p>I’m a passionate web developer with a knack for building clean and user-friendly websites.</p>
+      </div>
+      <div class="section__pic-container">
+        <img src="about.jpg" alt="About Rajesh" class="about-pic" />
       </div>
     </div>
   </section>
 
   <!-- Experience Section -->
   <section id="experience">
-    <p class="section__text_p1">Explore My</p>
     <h1 class="title">Experience</h1>
     <div class="experience-details-container">
+      <h2 class="experience-sub-title">Frontend Development</h2>
       <div class="article-container">
-        <article><i class="fab fa-html5 icon"></i><p>HTML</p></article>
-        <article><i class="fab fa-css3-alt icon"></i><p>CSS</p></article>
-        <article><i class="fab fa-js icon"></i><p>JavaScript</p></article>
-        <article><i class="fab fa-react icon"></i><p>React</p></article>
-        <article><i class="fab fa-git icon"></i><p>Git</p></article>
+        <article><i class="fas fa-check-circle icon"></i>HTML</article>
+        <article><i class="fas fa-check-circle icon"></i>CSS</article>
+        <article><i class="fas fa-check-circle icon"></i>JavaScript</article>
       </div>
     </div>
   </section>
 
   <!-- Projects Section -->
   <section id="projects">
-    <p class="section__text_p1">Browse My Recent</p>
     <h1 class="title">Projects</h1>
     <div class="profile-project">
       <div class="color-container">
-        <img src="project1.jpg" class="project-img" alt="Project 1">
-        <h2 class="project-title">Project One</h2>
+        <img src="project1.jpg" alt="Project 1" class="project-img"/>
+        <h3 class="project-title">Portfolio Website</h3>
         <div class="btn_container">
-          <button class="btn btn-color-2 project-btn">GitHub</button>
-          <button class="btn btn-color-2 project-btn">Live Demo</button>
+          <button class="btn project-btn">View</button>
         </div>
       </div>
     </div>
   </section>
 
-  
+  <!-- Contact Section -->
   <section id="contact">
-    <p class="section__text_p1">Get in Touch</p>
     <h1 class="title">Contact Me</h1>
     <div class="contact-info-upper-container">
       <div class="contact-info-container">
         <i class="fas fa-envelope email-icon"></i>
-        <p><a href="mailto:youremail@example.com">youremail@example.com</a></p>
-      </div>
-      <div class="contact-info-container">
-        <i class="fab fa-linkedin linkedin-icon"></i>
-        <p><a href="https://linkedin.com">LinkedIn</a></p>
+        <p><a href="mailto:rajesh@example.com">rajesh@example.com</a></p>
       </div>
     </div>
   </section>
 
- 
+  <!-- Footer -->
   <footer>
-    <p>© 2025 Rajesh . All rights reserved.</p>
+    <p>&copy; 2025 Rajesh. All rights reserved.</p>
   </footer>
-
 </body>
 </html>
