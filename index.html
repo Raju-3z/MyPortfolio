@@ -2,101 +2,229 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Rajesh | Portfolio</title>
-  <link rel="stylesheet" href="style.css"/>
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Space Grotesk', sans-serif;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    p {
+      color: rgb(85, 85, 85);
+    }
+
+    a, .btn {
+      transition: all 300ms ease;
+    }
+
+    nav, .nav-links {
+      display: flex;
+      gap: 2rem;
+      list-style: none;
+      font-size: 1.5rem;
+    }
+
+    nav {
+      justify-content: space-around;
+      align-items: center;
+      height: 17vh;
+    }
+
+    a {
+      color: black;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: rgb(95, 23, 188);
+      text-decoration: underline;
+      text-underline-offset: 1rem;
+    }
+
+    .logo {
+      font-size: 2rem;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 4vh 10rem;
+      min-height: 96vh;
+      box-sizing: border-box;
+    }
+
+    #profile {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .section__pic-container img {
+      height: 300px;
+      width: 300px;
+      border-radius: 70px;
+      object-fit: cover;
+    }
+
+    .section__text {
+      text-align: center;
+    }
+
+    .section__text_p1 {
+      font-weight: 600;
+    }
+
+    .section__text_p2 {
+      font-size: 1.75rem;
+      margin-bottom: 1rem;
+    }
+
+    .title {
+      font-size: 3rem;
+      text-align: center;
+    }
+
+    #social-container {
+      display: flex;
+      justify-content: center;
+      margin-top: 1rem;
+      gap: 1rem;
+    }
+
+    .icon {
+      height: 2rem;
+      cursor: pointer;
+      color: gray;
+    }
+
+    .btn_container {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin-top: 1.5rem;
+    }
+
+    .btn {
+      font-weight: 600;
+      padding: 1rem;
+      width: 8rem;
+      border-radius: 1rem;
+      border: rgb(53, 53, 53) 0.1rem solid;
+      transition: all 300ms ease;
+    }
+
+    .btn-color-1 {
+      background: rgb(53, 53, 53);
+      color: white;
+    }
+
+    .btn-color-1:hover {
+      background: black;
+    }
+
+    .btn-color-2 {
+      background: none;
+    }
+
+    .btn-color-2:hover {
+      border-color: white;
+    }
+
+    #about {
+      padding-top: 6rem;
+    }
+
+    .about-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+      margin-top: 2rem;
+    }
+
+    .about-pic {
+      border-radius: 3.5rem;
+      height: 300px;
+      width: 250px;
+      object-fit: cover;
+    }
+
+    .details-container {
+      flex: 1;
+      padding: 1.5rem;
+      border-radius: 2rem;
+      border: rgb(163, 163, 163) 0.1rem solid;
+      text-align: center;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+    }
+  </style>
 </head>
+
 <body>
-  <!-- Navigation -->
   <nav>
     <div class="logo">Rajesh</div>
     <ul class="nav-links">
       <li><a href="#profile">Home</a></li>
       <li><a href="#about">About</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#projects">Projects</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
 
-  <!-- Profile Section -->
   <section id="profile">
     <div class="section__pic-container">
-      <img src="profile.jpg" alt="Rajesh Profile Picture" />
+      <img src="https://via.placeholder.com/300x300" alt="Profile Picture" />
     </div>
     <div class="section__text">
       <p class="section__text_p1">Hello, I'm</p>
       <h1 class="title">Rajesh</h1>
       <p class="section__text_p2">B.Tech Graduate in Electronics and Computer Engineering</p>
+      <div id="social-container">
+        <a href="https://linkedin.com" target="_blank"><img class="icon" src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" /></a>
+        <a href="https://github.com" target="_blank"><img class="icon" src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub" /></a>
+      </div>
       <div class="btn_container">
         <button class="btn btn-color-1">Resume</button>
-        <button class="btn btn-color-2">Contact Me</button>
-      </div>
-      <div id="social-container">
-        <a href="https://www.linkedin.com/in/your-link" target="_blank"><i class="fab fa-linkedin linkedin-icon"></i></a>
-        <a href="https://github.com/your-github" target="_blank"><i class="fab fa-github github-icon"></i></a>
-        <a href="skype:live:your-skype-id"><i class="fab fa-skype skype-icon"></i></a>
+        <button class="btn btn-color-2">Contact</button>
       </div>
     </div>
   </section>
 
-  <!-- About Section -->
   <section id="about">
-    <h1 class="title">About Me</h1>
-    <div class="section-container about-container">
-      <div class="about-details-container">
-        <div class="details-container">
-          <p>I'm a recent B.Tech graduate in Electronics and Computer Engineering. I'm passionate about building user-centric web applications and learning new technologies.</p>
-        </div>
-      </div>
-      <div class="section__pic-container">
-        <img src="about.jpg" alt="About Rajesh" class="about-pic" />
+    <h2 class="title">About Me</h2>
+    <div class="about-container">
+      <img class="about-pic" src="https://via.placeholder.com/250x300" alt="About Picture" />
+      <div class="details-container">
+        <p>I am a B.Tech Graduate in Electronics and Computer Engineering with a passion for software development and automation testing. I enjoy building responsive web applications and learning new technologies.</p>
       </div>
     </div>
   </section>
 
-  <!-- Experience Section -->
-  <section id="experience">
-    <h1 class="title">Experience</h1>
-    <div class="experience-details-container">
-      <h2 class="experience-sub-title">Frontend Development</h2>
-      <div class="article-container">
-        <article><i class="fas fa-check-circle icon"></i>HTML</article>
-        <article><i class="fas fa-check-circle icon"></i>CSS</article>
-        <article><i class="fas fa-check-circle icon"></i>JavaScript</article>
-      </div>
-    </div>
-  </section>
-
-  <!-- Projects Section -->
-  <section id="projects">
-    <h1 class="title">Projects</h1>
-    <div class="profile-project">
-      <div class="color-container">
-        <img src="project1.jpg" alt="Project 1" class="project-img"/>
-        <h3 class="project-title">Portfolio Website</h3>
-        <div class="btn_container">
-          <button class="btn project-btn">View</button>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact Section -->
   <section id="contact">
-    <h1 class="title">Contact Me</h1>
-    <div class="contact-info-upper-container">
-      <div class="contact-info-container">
-        <i class="fas fa-envelope email-icon"></i>
-        <p><a href="mailto:rajesh@example.com">rajesh@example.com</a></p>
-      </div>
+    <h2 class="title">Contact Me</h2>
+    <div class="details-container">
+      <p>Email: rr620033@gmail.com</p>
+      <p>Skype: rajesh.skype</p>
     </div>
   </section>
 
-  <!-- Footer -->
   <footer>
-    <p>&copy; 2025 Rajesh. All rights reserved.</p>
+    <p>© 2025 Rajesh. All rights reserved.</p>
   </footer>
 </body>
 </html>
